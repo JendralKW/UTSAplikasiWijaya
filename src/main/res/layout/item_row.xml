@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!--// menggunakan linear layout-->
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="378dp"
+        android:layout_height="284dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/gambar2" />
+    <!--// menggunakan image view untuk menampilkan gambar-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <!--// menggunakan linear layout kembali untuk diisi judul dan detail dengan maksimal 2 baris-->
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Barcelona"/>
+
+        <TextView
+            android:id="@+id/tvdetil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Contoh Detil Club"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
